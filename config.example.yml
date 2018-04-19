@@ -1,0 +1,10 @@
+# api server configuration
+server:
+  port:
+  secret:
+
+# telegram
+telegram:
+  telegramBotToken:
+  telegramChannels:
+  telegramId:
