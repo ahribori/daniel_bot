@@ -15,7 +15,7 @@ try {
 }
 
 if (!doc) {
-    throw new Error('Invalid configurations. (check config.yml)');
+    throw new Error('config.yml not exist');
 }
 
 export default doc;
