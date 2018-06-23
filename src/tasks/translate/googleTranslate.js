@@ -40,3 +40,9 @@ export const translateToJapanese = async (text, browser) => {
 export const translateToChinese = async (text, browser) => {
     return await translate(text, 'zh-CN', browser);
 };
+
+export const translateToEnglishViaJapanese = async (text, browser) => {
+    const japanese = await translateToJapanese(text, browser);
+    await browser.url('https://translate.google.co.kr/');
+    return await translateToEnglish(japanese, browser);
+};
